@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+/* ---------------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* ------------------------------ */
+
+.wrapper {
+  margin: 0 auto;
+}
+
+header {
+    padding-bottom: 17%;
+}
+
+.main-nav {
+  justify-content: center;
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 35px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 37px;
+}
+
+.main-nav a {
+  color: #432;
+}
+
+.list {
+  position: relative;
+}
+
+.list::after {  /*下線の場合はbeforeでもafterでもどちらでもいい*/
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: '';    /*値は空だが疑似CSSでは記述必須*/
+  width: 100%;     /*横幅いっぱいに表示*/
+  height: 2px;    /*薄くして棒状にする*/
+  background: #333;   /*透明な棒に色付けする*/
+  opacity: 0;     /*非表示にする*/
+  transition: .3s;    /*「:hoverの際の」変化を0.3sかけて適用*/
+}
+
+.list:hover::after {
+  bottom: -4px;
+  opacity: 1;
+}
+
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
+
+.page-title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.page-title::after {
+  content: "";
+}
+
+.button {
+   font-size: 1.3rem;
+   background: #432;
+   color: #fff;
+   padding: 18px 50px;
+   border-radius: 30px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+  padding-top: 70px;
+  position: relative;
+}
+
+main h2::after {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    width: 90px;
+    left: 47.7%;
+    height: 2px;
+    background: #333;
+    display: inline-block;
+}
+
+.works-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 36px;
+  padding: 70px;
+}
+
+.skill-list {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding: 70px;
+    justify-content: space-between;
+}
+
+.html5 img {
+  margin-left: 200px;
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+  margin-right: 190px;
+}
+
+.css3 img {
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    margin-right: 100px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.profile-img {
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+  margin-right: 90px;
+}
+
+
+#works-section {
+  background-color: #cfe2e2;
+  padding-bottom: 30px;
+}
+
+#skill-section {
+  background-color: #e2d9cf;
+  padding-bottom: 80px;
+}
+
+#about-section {
+  background-color: #fcdce0;
+  padding-bottom: 80px;
+}
+
+#contact-section {
+  background-color: #ffffe0;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+  @media(max-width: 600px){
+    .container {
+      flex-direction: column;
+    }
+    .main,
+    .side {
+      width: 100%;
+    }
+  }
+
+  .fab {
+    font-size: 2.5em;
+    margin-top: 70px;
+    margin-bottom: 36px;
+  }
+
+  address {
+    padding: 10px;
+    text-align: center;
+  }
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
