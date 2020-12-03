@@ -200,8 +200,7 @@ footer {
   .container {
     flex-direction: column;
   }
-  .main,
-  .side {
+  .{
     width: 100%;
   }
 }
