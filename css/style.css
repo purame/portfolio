@@ -206,7 +206,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-  .container {
+  .works-list {
     flex-direction: column;
   }
   .wrapper {
