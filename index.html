@@ -25,10 +25,10 @@
   <!-- nav -->
         <nav>
           <ul class="main-nav">
-            <li><a class="list" href="#">works</a></li>
-            <li><a class="list" href="#">skill</a></li>
-            <li><a class="list" href="#">about</a></li>
-            <li><a class="list" href="#">contact</a></li>
+            <li><a class="list" href="#works-section">works</a></li>
+            <li><a class="list" href="#skill-section">skill</a></li>
+            <li><a class="list" href="#about-section">about</a></li>
+            <li><a class="list" href="#contact-section">contact</a></li>
           </ul>
         </nav>
   <!-- main-home-content -->
@@ -177,7 +177,7 @@
 <!-- contact------------------------------------------------------------------------------------------ -->
         <section id="contact-section">
             <h2>contact</h2>
-            <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter text-zoom"></i></a>
             <address>
               purame0620@gmail.com
             </address>
@@ -185,7 +185,6 @@
           </section>
 
       </main>
-
 <!-- footer------------------------------------------------------------------------------------------ -->
       <footer>
         <small>Copyright&copy; 2021</small>
@@ -195,36 +194,30 @@
       </footer>
 
     </div>
-
 <!-- jQuery ------------------------------------------------------------------------------------------------>
     <script>
       $(function(){
-        ScrollReveal().reveal('.fadein0',{ duration: '1800',delay: '200', viewFactor: '0.8'})
-      });
-      $(function(){
-        ScrollReveal().reveal('.fadein1',{ duration: '1800',delay: '700', viewFactor: '0.8'})
-      });
-      $(function(){
-        ScrollReveal().reveal('.fadein2',{ duration: '1800',delay: '1000', viewFactor: '0.8'})
-      });
-      $(function(){
-        ScrollReveal().reveal('.fadein3',{ duration: '1800',delay: '1600', viewFactor: '0.8'})
-      });
-      $(function(){
-        ScrollReveal().reveal('.fadein4',{ duration: '1800',delay: '2000', viewFactor: '0.8'})
-      });
-      $(function(){
-        ScrollReveal().reveal('.fadein5',{ duration: '1800',delay: '2400', viewFactor: '0.8'})
-      });
-      $(function(){
-        ScrollReveal().reveal('.anime',{ duration: '3000', viewFactor: '0.8', reset: 'true'});
-      });
-      $(function(){
-        ScrollReveal().reveal('.port',{distance: '350px', origin: 'left', viewFactor: '0.7'});
+        ScrollReveal().reveal('.fadein0',{ duration: '1800',delay: '200'});
+        ScrollReveal().reveal('.fadein1',{ duration: '1800',delay: '700'});
+        ScrollReveal().reveal('.fadein2',{ duration: '1800',delay: '1200'});
+        ScrollReveal().reveal('.fadein3',{ duration: '1800',delay: '1700'});
+        ScrollReveal().reveal('.fadein4',{ duration: '1800',delay: '2200'});
+        ScrollReveal().reveal('.fadein5',{ duration: '1800',delay: '2600'});
+        ScrollReveal().reveal('.anime',{ duration: '3000', viewFactor: '1', reset: 'true'});
+        ScrollReveal().reveal('.port',{distance: '350px', origin: 'left', viewFactor: '1'});
+        $('.text-zoom').mouseover(function(){
+          $('.text-zoom').animate({
+            'fontSize': '70px'
+          }, 600);
+        });
+        $('.text-zoom').mouseout(function(){
+          $('.text-zoom').animate({
+            'fontSize': '40px'
+          }, 600);
+        });
+
       });
     </script>
-
     <script src="https://unpkg.com/scrollreveal"></script>
-
   </body>
 </html>
