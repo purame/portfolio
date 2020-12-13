@@ -55,9 +55,9 @@ header {
 .home-content {
   text-align: center;
   margin-top: 10%;
+  font-size: 3rem;
 }
 .page-title {
-  font-size: 5rem;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 3px;
@@ -129,7 +129,7 @@ main h2::after {
     margin: 0 auto;
 }
 .skill-item {
-  margin-left: 70px;
+
 }
 .star-rating{
       position: relative;
@@ -161,6 +161,7 @@ main h2::after {
   justify-content: center;
   margin-top: 90px;
 }
+
 .profile-img {
   margin-right: 90px;
 }
@@ -194,26 +195,4 @@ footer {
   color: #432;
   margin-left: 46px;
   background: linear-gradient(transparent 60%, #ff6 60%);
-}
-/* mediaクエリ--------------------------------------------------------------------- */
-@media(max-width: 600px){
-  * {
-  float: none;
-  position: static;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-  .works-list {
-    flex-direction: column;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  header {
-    justify-content: center;
-  }
-
 }
